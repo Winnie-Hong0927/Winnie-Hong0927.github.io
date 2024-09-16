@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content=#58b77a>
-  <title>Docker | Winnie&#39;s sweet home</title>
+  <title>Databend结项报告 | Winnie&#39;s sweet home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Winnie">
   <meta name="keywords" content="">
@@ -98,8 +98,8 @@
       <a href="javascript:;" class="popup-trigger" title="search"><i class="menu-item-icon fa fa-search fa-fw"></i></a>
       <div class="page-title">
         <div class="avatar"><a href="/"><img src="https://winnie-blog.oss-cn-beijing.aliyuncs.com/avatar.jpeg" alt="Winnie"></a></div>
-        <span>2024-08-24</span>
-        <h2>Docker</h2>
+        <span>2024-09-16</span>
+        <h2>Databend结项报告</h2>
         
         <div class="social-links">
     <a href="https://github.com/Winnie-Hong0927" target="_blank" title="social-link"><i class="fa fa-github fa-fw"></i></a>
@@ -113,42 +113,64 @@
   <div class="lx-post">
     <div class="lx-entry padding">
       <div>
-        <p>这是一篇在B站尚硅谷那学到的Docker笔记</p>
+        <p>Databend的项目结束啦，这是结项报告，虽然内容不多（主要是因为语文功底不行，写不出多少文字），但是收获确实非常大的，真的很感谢这次机会<code>(*^▽^*)</code></p>
 <span id="more"></span>
 
-<blockquote class='blockquote-center'><p>人类的悲欢并不相通，我只觉得他们吵闹。<br><strong>——鲁迅</strong></p>
-</blockquote>
-
-<h1 id="Docker介绍"><a href="#Docker介绍" class="headerlink" title="Docker介绍"></a>Docker介绍</h1><p>系统平滑移植，容器虚拟化技术，软件可以带环境安装。</p>
-<p>通过<strong>镜像</strong>将业务系统核心除外，运作应用程式所需要的系统环境，由下而上打包，达到应用程式跨平台运作。</p>
-<img src="/img/Docker/docker介绍.png" alt="Docker介绍" height="50%">
-
-<ul>
-<li>传统虚拟机技术虚拟出一套硬件，在其上运行一个完整的操作系统，再运行所需应用进程；</li>
-<li>容器内的应用进程直接运行于宿主的内核，容器没有自己的内核也没有硬件虚拟，容器比虚拟机更为轻便，每个容器都有自己的文件系统；</li>
+<h1 id="洪文丽-246460479-结项报告"><a href="#洪文丽-246460479-结项报告" class="headerlink" title="洪文丽-246460479-结项报告"></a>洪文丽-246460479-结项报告</h1><h2 id="项目信息"><a href="#项目信息" class="headerlink" title="项目信息"></a>项目信息</h2><ul>
+<li><p>项目名称：支持 External Dictionaries</p>
+</li>
+<li><p>方案描述：为了提高Databend数据库的效率和数据一致性，可以引入数据字典功能，并开发相应的字典函数，使用户能够直接从Databend查询存储在MySQL、Redis等外部数据源的信息。通过创建数据字典和使用如<code>dict_get</code>这样的字典函数，Databend可以避免繁琐的数据导出和导入过程，确保数据的实时更新和准确性。这种设计简化了大量数据处理的复杂性，提供了强大的数据管理能力。</p>
+</li>
+<li><p>时间规划：</p>
+<img src="/img/Databend/时间轴.png" alt="时间规划" height="50%"></li>
 </ul>
-<p><a target="_blank" rel="noopener" href="https://www.docker.com/">Docker: Accelerated Container Application Development</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/docker-archive/docker-ce">GitHub - docker-archive&#x2F;docker-ce: :warning: This repository is deprecated and will be archived (Docker CE itself is NOT deprecated) see the https://github.com/docker/docker-ce/blob/master/README.md :warning:</a></p>
-<p><a target="_blank" rel="noopener" href="https://hubgw.docker.com/">Docker Hub Container Image Library | App Containerization</a></p>
-<h1 id="Docker安装"><a href="#Docker安装" class="headerlink" title="Docker安装"></a>Docker安装</h1><img src="/img/Docker/安装前提.png" alt="安装前提" height="50%">
-<img src="/img/Docker/安装教程.png" alt="安装教程" height="50%">
-
-<h2 id="Docker的基本组成"><a href="#Docker的基本组成" class="headerlink" title="Docker的基本组成"></a>Docker的基本组成</h2><h3 id="镜像"><a href="#镜像" class="headerlink" title="镜像"></a>镜像</h3><p>只读的模板，可以用来创建Docker容器，一个镜像可以创建很多容器。</p>
-<p>Java类模板</p>
-<h3 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h3><p>new 的实例对象，用镜像创的运行实例。</p>
-<h3 id="仓库"><a href="#仓库" class="headerlink" title="仓库"></a>仓库</h3><p>集中存放镜像文件的场所，类似于Maven、GitHub</p>
-<p>Docker Hub存放各种镜像模板。</p>
-<p><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1768295">图解 Docker 架构-腾讯云开发者社区-腾讯云 (tencent.com)</a></p>
-<img src="/img/Docker/Docker架构图.png" alt="Docker架构图" height="50%">
-
+<h2 id="项目总结"><a href="#项目总结" class="headerlink" title="项目总结"></a>项目总结</h2><ul>
+<li><p>已完成工作：</p>
+<ol>
+<li>编写并提交了 RFC 文档，明确了技术架构、功能设计及实现细节</li>
+<li>实现了对 <code>CREATE</code>、<code>DROP</code>、<code>SHOW</code> 等字典管理 SQL 语句的解析和执行支持，确保字典的增删查功能具备完整的 SQL 操作接口</li>
+<li>支持字典元数据API</li>
+<li>提供了常用字典函数（如 <code>dict_get</code>），支持用户从 MySQL、Redis 等数据源中直接检索数据并返回结果</li>
+<li>支持将 Redis以及Mysql 作为数据源，并实现相关的DDL</li>
+</ol>
+</li>
+<li><p>遇到的问题及解决方案：</p>
 <ul>
-<li>启动Docker:<code>systemctl start docker</code></li>
-<li>终止Docker:<code>systemctl stop docker</code></li>
-<li>卸载：<ul>
-<li><code>yum remove docker-ce docker-ce-cli containerd.io</code></li>
-<li><code>rm -rf /var/lib/docker</code></li>
-<li><code>rm -rf /var/lib/containerd</code></li>
+<li>最初由于 Git 操作不熟练，经过导师指导，逐渐掌握了 Git 和 GitHub 的使用，提高了代码管理的效率。</li>
+<li>在项目初期，由于开发环境较为复杂且对硬件资源需求较高，本地配置和运行时遇到了内存不足等问题。为了应对这一挑战，导师提供了一台高性能远程服务器作为编译和测试环境，大大提升了开发效率和代码调试的顺畅性。此外，我们通过 Docker 容器化环境进行分布式测试，以确保不同开发环节的兼容性。</li>
+<li>我们计划使用<code>opendal</code>读取数据库中的数据，发现它需要数据库中的数据类型为<code>BLOB/TEXT</code>，与我们的预期效果不一致，但是导师说有问题可以慢慢优化，于是导师优化了<code>opendal</code>，使得它能够在我们项目中使用。</li>
+<li>在对 <code>dict_get</code> 函数进行 MySQL 数据库数据读取测试时，我们通过 <code>mysql_srv</code> 模拟服务器响应。最初使用官方示例代码进行测试时，遇到编译错误。导师深入分析了问题根源，主要涉及客户端预处理语句的处理不当。通过改进请求和响应处理逻辑，修改了示例代码中的参数传递方式，最终使测试顺利通过。此外，添加了更多边缘测试用例，以确保该功能在不同数据场景下的稳定性。</li>
 </ul>
+</li>
+<li><p>测试用例：</p>
+<ol>
+<li><p>在Databend创建&#x2F;删除&#x2F;查看Dictionary，以下为部分测试结果示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">statement ok</span><br><span class="line">CREATE DICTIONARY d(c1 VARCHAR NOT NULL, c2 VARCHAR NOT NULL) PRIMARY KEY c1 SOURCE(mysql(host=&#x27;localhost&#x27; port=&#x27;3306&#x27; username=&#x27;root&#x27; password=&#x27;1234&#x27; db=&#x27;db1&#x27; table=&#x27;test_table&#x27;))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">query TT</span><br><span class="line">show create dictionary d</span><br><span class="line">----</span><br><span class="line">d CREATE DICTIONARY d ( c1 VARCHAR NOT NULL, c2 VARCHAR NOT NULL ) PRIMARY KEY c1 SOURCE(mysql(db=&#x27;db1&#x27; host=&#x27;localhost&#x27; password=&#x27;[HIDDEN]&#x27; port=&#x27;3306&#x27; table=&#x27;test_table&#x27; username=&#x27;root&#x27;))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">statement ok</span><br><span class="line">DROP DICTIONARY IF EXISTS d;</span><br></pre></td></tr></table></figure>
+
+<p>使用 <code>databend-sqllogictests</code> 工具来运行 SQL Logic Tests。SQL Logic Tests 是一种用于测试数据库查询正确性的测试套件，它包含了一系列的测试用例，用于验证数据库系统是否能够正确处理各种 SQL 查询。</p>
+<p>如图所示，测试通过：</p>
+<p>![dictionary_ddl](C:\Users\86182\Desktop\Databend\屏幕截图 2024-08-19 160032.png)</p>
+</li>
+<li><p>通过 <code>dict_get</code> 函数，能够高效地从从 Redis 和 MySQL 数据源中成功检索数据，并返回字典数据。以下为部分测试结果示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">statement ok</span><br><span class="line">CREATE OR REPLACE DICTIONARY d(key string not null, value string not null) PRIMARY KEY key SOURCE(redis(host=&#x27;127.0.0.1&#x27; port=&#x27;6379&#x27;))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">query T</span><br><span class="line">SELECT dict_get(d, &#x27;value&#x27;, &#x27;b&#x27;)</span><br><span class="line">----</span><br><span class="line">b_value</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">statement ok</span><br><span class="line">CREATE OR REPLACE DICTIONARY d2(id int, name string, age uint16, salary float, active bool) PRIMARY KEY id SOURCE(mysql(host=&#x27;localhost&#x27; port=&#x27;3106&#x27; username=&#x27;root&#x27; password=&#x27;123456&#x27; db=&#x27;test&#x27; table=&#x27;user&#x27;));</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">query TIFT</span><br><span class="line">select dict_get(d2, &#x27;name&#x27;, 1), dict_get(d2, &#x27;age&#x27;, 1), dict_get(d2, &#x27;salary&#x27;, 1), dict_get(d2, &#x27;active&#x27;, 1)</span><br><span class="line">----</span><br><span class="line">Alice 24 100.0 1</span><br></pre></td></tr></table></figure>
+
+<p>如图所示，测试通过：</p>
+<p>![dict_get_func](C:\Users\86182\Desktop\Databend\屏幕截图 2024-09-12 152921.png)</p>
+</li>
+</ol>
+</li>
+<li><p>后续工作安排：</p>
+<p>后续我们将逐步扩展对 MySQL 中复杂数据类型（如 Date、Timestamp）的支持，以满足更多时间相关查询的需求。此外，项目计划进一步集成 PostgreSQL、ClickHouse 等常用数据库作为外部字典数据源，并对 NoSQL 数据库进行探索性研究，增强系统在多样化数据场景中的兼容性和扩展性。</p>
 </li>
 </ul>
 
@@ -159,12 +181,12 @@
 <div class="lx-navigation">
 	<div class="lx-cover next lx-cover-sm" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/images/footer-l.min.jpeg)">
 		<div class="overlay"></div>
-		<a class="copy" href="../../../09/13/hello-world/">
+		<a class="copy" href="#">
 			<div class="display-t">
 				<div class="display-tc">
 					<div>
 						<span>Next</span>
-						<h3>First T...</h3>
+						<h3>没有更新的文章</h3>
 					</div>
 				</div>
 			</div>
@@ -172,12 +194,12 @@
 	</div>
         <div class="lx-cover prev lx-cover-sm" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/images/footer-r.min.jpeg)">
 		<div class="overlay"></div>
-		<a class="copy" href="#">
+		<a class="copy" href="../../13/hello-world/">
 			<div class="display-t">
 				<div class="display-tc">
 					<div>
 						<span>Prev</span>
-						<h3>没有更早的文章</h3>
+						<h3>First T...</h3>
 					</div>
 				</div>
 			</div>
