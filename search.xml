@@ -1,6 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Docker</title>
+    <url>/2024/08/24/Docker/</url>
+    <content><![CDATA[<p>这是一篇在B站尚硅谷那学到的Docker笔记</p>
+<span id="more"></span>
+
+<blockquote class='blockquote-center'><p>人类的悲欢并不相通，我只觉得他们吵闹。<br><strong>——鲁迅</strong></p>
+</blockquote>
+
+<h1 id="Docker介绍"><a href="#Docker介绍" class="headerlink" title="Docker介绍"></a>Docker介绍</h1><p>系统平滑移植，容器虚拟化技术，软件可以带环境安装。</p>
+<p>通过<strong>镜像</strong>将业务系统核心除外，运作应用程式所需要的系统环境，由下而上打包，达到应用程式跨平台运作。</p>
+<img src="/img/Docker/docker介绍.png" alt="Docker介绍" height="50%">
+
+<ul>
+<li>传统虚拟机技术虚拟出一套硬件，在其上运行一个完整的操作系统，再运行所需应用进程；</li>
+<li>容器内的应用进程直接运行于宿主的内核，容器没有自己的内核也没有硬件虚拟，容器比虚拟机更为轻便，每个容器都有自己的文件系统；</li>
+</ul>
+<p><a href="https://www.docker.com/">Docker: Accelerated Container Application Development</a></p>
+<p><a href="https://github.com/docker-archive/docker-ce">GitHub - docker-archive&#x2F;docker-ce: :warning: This repository is deprecated and will be archived (Docker CE itself is NOT deprecated) see the https://github.com/docker/docker-ce/blob/master/README.md :warning:</a></p>
+<p><a href="https://hubgw.docker.com/">Docker Hub Container Image Library | App Containerization</a></p>
+<h1 id="Docker安装"><a href="#Docker安装" class="headerlink" title="Docker安装"></a>Docker安装</h1><img src="/img/Docker/安装前提.png" alt="安装前提" height="50%">
+<img src="/img/Docker/安装教程.png" alt="安装教程" height="50%">
+
+<h2 id="Docker的基本组成"><a href="#Docker的基本组成" class="headerlink" title="Docker的基本组成"></a>Docker的基本组成</h2><h3 id="镜像"><a href="#镜像" class="headerlink" title="镜像"></a>镜像</h3><p>只读的模板，可以用来创建Docker容器，一个镜像可以创建很多容器。</p>
+<p>Java类模板</p>
+<h3 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h3><p>new 的实例对象，用镜像创的运行实例。</p>
+<h3 id="仓库"><a href="#仓库" class="headerlink" title="仓库"></a>仓库</h3><p>集中存放镜像文件的场所，类似于Maven、GitHub</p>
+<p>Docker Hub存放各种镜像模板。</p>
+<p><a href="https://cloud.tencent.com/developer/article/1768295">图解 Docker 架构-腾讯云开发者社区-腾讯云 (tencent.com)</a></p>
+<img src="/img/Docker/Docker架构图.png" alt="Docker架构图" height="50%">
+
+<ul>
+<li>启动Docker:<code>systemctl start docker</code></li>
+<li>终止Docker:<code>systemctl stop docker</code></li>
+<li>卸载：<ul>
+<li><code>yum remove docker-ce docker-ce-cli containerd.io</code></li>
+<li><code>rm -rf /var/lib/docker</code></li>
+<li><code>rm -rf /var/lib/containerd</code></li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>First Try.</title>
+    <url>/2024/09/13/hello-world/</url>
+    <content><![CDATA[<p>介绍了如何启动该博客</p>
+<span id="more"></span>
+<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Beautiful photos</title>
+    <url>/2024/09/14/%E6%88%91%E7%9A%84%E7%BE%8E%E7%85%A7/</url>
+    <content><![CDATA[<p>今天去中街拍了个写真，算是一次大胆的尝试，因为试了四种风格，和平时的我非常不一样，这里就放四种风格里我觉得每种风格里最好看的一张(可都是没有P过的高清相机原图哦)，在博客里放自己的照片，我是不是太自恋了<code>⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄</code></p>
+<span id="more"></span>
+
+<p>第一张是纯欲风，看上去我非常的楚楚动人，背景也很干净，显得我人就干净了许多，但是这件衣服从前面看上去一切正常，但是后面是一整个大露背，不过也没拍到。</p>
+<img src="/img/life/first.jpg" alt="纯欲风" height="50%">
+
+<p>第二张是港风，拍起来真的好有感觉，就像我是那种有很多故事的成熟御姐，是我喜欢的风格，但是舍友说我不太适合这种风格，不过尝试一下还是非常好的。这件衣服前面就是一个深V，拍的时候胸贴都能开到，下摆还是个高开叉，直接开到大腿根，也就只能拍照穿穿了。</p>
+<img src="/img/life/second.jpg" alt="港风" height="50%">
+
+<p>第三张就是可爱风了，其实我不太喜欢这种风格，因为平时就是这种，但是舍友说我就适合这种，<code>(ಥ﹏ಥ)</code>，不过拍出来也挺好看的，主要是为了20岁生日的时候发个朋友圈<code>(*^▽^*)</code></p>
+<img src="/img/life/third.jpg" alt="可爱风" height="50%">
+
+<p>最后一张我看模特图还挺好看的，自己拍出来就满满的违和感，像是小孩穿了大人的衣服一样，一点都不合适，看来我的女强人梦破灭了，不过女强人也可以不穿西装的对吧，没错，<code>(#^.^#)</code></p>
+<img src="/img/life/fourth.jpg" alt="职场风" height="50%">]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Databend结项报告</title>
     <url>/2024/09/16/Databend%E7%BB%93%E9%A1%B9%E6%8A%A5%E5%91%8A/</url>
     <content><![CDATA[<p>Databend的项目结束啦，这是结项报告，虽然内容不多（主要是因为语文功底不行，写不出多少文字），但是收获确实非常大的，真的很感谢这次机会<code>(*^▽^*)</code></p>
@@ -67,71 +154,5 @@
       <categories>
         <category>Databend</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Docker</title>
-    <url>/2024/08/24/Docker/</url>
-    <content><![CDATA[<p>这是一篇在B站尚硅谷那学到的Docker笔记</p>
-<span id="more"></span>
-
-<blockquote class='blockquote-center'><p>人类的悲欢并不相通，我只觉得他们吵闹。<br><strong>——鲁迅</strong></p>
-</blockquote>
-
-<h1 id="Docker介绍"><a href="#Docker介绍" class="headerlink" title="Docker介绍"></a>Docker介绍</h1><p>系统平滑移植，容器虚拟化技术，软件可以带环境安装。</p>
-<p>通过<strong>镜像</strong>将业务系统核心除外，运作应用程式所需要的系统环境，由下而上打包，达到应用程式跨平台运作。</p>
-<img src="/img/Docker/docker介绍.png" alt="Docker介绍" height="50%">
-
-<ul>
-<li>传统虚拟机技术虚拟出一套硬件，在其上运行一个完整的操作系统，再运行所需应用进程；</li>
-<li>容器内的应用进程直接运行于宿主的内核，容器没有自己的内核也没有硬件虚拟，容器比虚拟机更为轻便，每个容器都有自己的文件系统；</li>
-</ul>
-<p><a href="https://www.docker.com/">Docker: Accelerated Container Application Development</a></p>
-<p><a href="https://github.com/docker-archive/docker-ce">GitHub - docker-archive&#x2F;docker-ce: :warning: This repository is deprecated and will be archived (Docker CE itself is NOT deprecated) see the https://github.com/docker/docker-ce/blob/master/README.md :warning:</a></p>
-<p><a href="https://hubgw.docker.com/">Docker Hub Container Image Library | App Containerization</a></p>
-<h1 id="Docker安装"><a href="#Docker安装" class="headerlink" title="Docker安装"></a>Docker安装</h1><img src="/img/Docker/安装前提.png" alt="安装前提" height="50%">
-<img src="/img/Docker/安装教程.png" alt="安装教程" height="50%">
-
-<h2 id="Docker的基本组成"><a href="#Docker的基本组成" class="headerlink" title="Docker的基本组成"></a>Docker的基本组成</h2><h3 id="镜像"><a href="#镜像" class="headerlink" title="镜像"></a>镜像</h3><p>只读的模板，可以用来创建Docker容器，一个镜像可以创建很多容器。</p>
-<p>Java类模板</p>
-<h3 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h3><p>new 的实例对象，用镜像创的运行实例。</p>
-<h3 id="仓库"><a href="#仓库" class="headerlink" title="仓库"></a>仓库</h3><p>集中存放镜像文件的场所，类似于Maven、GitHub</p>
-<p>Docker Hub存放各种镜像模板。</p>
-<p><a href="https://cloud.tencent.com/developer/article/1768295">图解 Docker 架构-腾讯云开发者社区-腾讯云 (tencent.com)</a></p>
-<img src="/img/Docker/Docker架构图.png" alt="Docker架构图" height="50%">
-
-<ul>
-<li>启动Docker:<code>systemctl start docker</code></li>
-<li>终止Docker:<code>systemctl stop docker</code></li>
-<li>卸载：<ul>
-<li><code>yum remove docker-ce docker-ce-cli containerd.io</code></li>
-<li><code>rm -rf /var/lib/docker</code></li>
-<li><code>rm -rf /var/lib/containerd</code></li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>First Try.</title>
-    <url>/2024/09/13/hello-world/</url>
-    <content><![CDATA[<p>介绍了如何启动该博客</p>
-<span id="more"></span>
-<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
 </search>
