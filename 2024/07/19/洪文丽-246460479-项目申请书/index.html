@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content=#58b77a>
+  <title>Databend项目申请书 | Winnie&#39;s sweet home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Winnie">
+  <meta name="keywords" content="">
+  <meta name="description" content="在这里有她对技术的研究，也有她对生活的想法，有欣喜，有难过，有抱怨，有欢乐，欢迎您的光临~~">
+  <script id="hexo-configurations">
+  var CONFIG = {
+    root: '/',
+    theme: 'hexo-theme-lx',
+    version: '0.4.4',
+    localsearch:{
+      "enable": true,
+      "trigger": "auto",
+      "top_n_per_article": 1,
+      "unescape": false,
+      "preload": false
+      },
+    path: 'search.xml'
+  };
+</script>
+
+  <link rel="shortcut icon" href="https://winnie-blog.oss-cn-beijing.aliyuncs.com/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/css/main.min.css">
+  
+  <style type="text/css">
+    pre,
+    code {
+      font-family: 'Fira Code', monospace;
+    }
+    html {
+      font-family: sans-serif;
+    }
+    body {
+      font-family: sans-serif;
+    }
+    h1, h2, h3, h4, h5, figure {
+      font-family: sans-serif;
+    }
+    .menu-container{
+      font-family: sans-serif;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/js/jquery.jside.menu.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	$(".menu-container").jSideMenu({
+	    jSidePosition: "position-right",
+	    jSideSticky: true,
+	    jSideSkin: "",
+	     });
+	}); 
+	</script>
+  <!--baidu_analytics-->
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?13bd5049a676d10737959932102ec557";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+<div class="single">
+<div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Search..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+<div id="page">
+<div class="header">
+  <div id="lx-aside" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/images/post_cover.min.jpeg)" data-stellar-background-ratio="0.5">
+    <div class="overlay">
+      <a href="javascript:;" class="popup-trigger" title="search"><i class="menu-item-icon fa fa-search fa-fw"></i></a>
+      <div class="page-title">
+        <div class="avatar"><a href="/"><img src="https://winnie-blog.oss-cn-beijing.aliyuncs.com/avatar.jpeg" alt="Winnie"></a></div>
+        <span>2024-07-19</span>
+        <h2>Databend项目申请书</h2>
+        
+        <div class="social-links">
+    <a href="https://github.com/Winnie-Hong0927" target="_blank" title="social-link"><i class="fa fa-github fa-fw"></i></a>
+    <a href="mailto:1853168638@qq.com" target="_blank" title="social-link"><i class="fa fa-envelope fa-fw"></i></a>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="lx-main-content">
+  <div class="lx-post">
+    <div class="lx-entry padding">
+      <div>
+        <p>Databend的项目申请书，第一次做项目其实挺紧张的，怕做不好，为了这个项目我还去咨询了学长应该怎么做项目，希望能够顺利把。</p>
+<span id="more"></span>
+
+<h1 id="项目申请书"><a href="#项目申请书" class="headerlink" title="项目申请书"></a>项目申请书</h1><ul>
+<li>项目名称：《支持 External Dictionaries》</li>
+<li>项目主导师：<a href="b41sh%3Cbaishen@datafuselabs.com">b41sh&lt;baishen@datafuselabs.com</a></li>
+<li>申请人：洪文丽</li>
+<li>日期：2024年5月22日</li>
+<li>邮箱：<a href="mailto:1853168638@qq.com;">1853168638@qq.com;</a></li>
+</ul>
+<h2 id="1-项目背景"><a href="#1-项目背景" class="headerlink" title="1. 项目背景"></a>1. 项目背景</h2><p>external dictionary 的主要功能是让 databend 可以接入并访问其他外部数据源的数据，例如 （MySQL、PostgreSQL 等），丰富 databend 的生态。</p>
+<p>假设我们有一个 MySQL 的数据库，里面有这样一张表</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> user_info(</span><br><span class="line">  user_id <span class="type">int</span>,</span><br><span class="line">  user_name <span class="type">varchar</span>(<span class="number">100</span>),</span><br><span class="line">  user_address <span class="type">varchar</span>(<span class="number">100</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> user_info <span class="keyword">VALUES</span>(<span class="number">1</span>, <span class="string">&#x27;tom&#x27;</span>, <span class="string">&#x27;beijing&#x27;</span>),(<span class="number">2</span>, <span class="string">&#x27;jack&#x27;</span>, <span class="string">&#x27;shanghai&#x27;</span>), (<span class="number">3</span>, <span class="string">&#x27;andy&#x27;</span>, <span class="string">&#x27;guangzhou&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>如果想在 Databend 访问这些数据，需要将 MySQL 的数据导出，再导入到 Databend 数据库。如果数据量很大，这样的操作会非常麻烦，同时如果数据经常发生变化，导入不及时也会造成数据的不一致。</p>
+<p>external dictionary 就是为了解决这类问题，让 databend 可以方便的接入其他数据库的数据，通过创建 dictionary 来直接访问外部数据源。</p>
+<p><strong>接入多种数据库所带来的好处：</strong></p>
+<ul>
+<li>实时性：当外部数据库中数据发生改变时，手动导入的数据可能和源数据不一致，而如果采用external dictionary让databend接入到外部数据库就能实现数据的实时修改，从而保证数据的最新性</li>
+<li>简化数据管理：通过直接访问外部数据源，可以避免复杂的 ETL流程，简化了数据管理的工作。</li>
+<li>灵活性更高：通过接入不同的数据库能够让企业不同类型的数据使用更合适的数据库进行存储。</li>
+<li>数据整合：当企业需要整合存储在不同数据库中的数据时，就可以通过databend把不同数据库的数据都取出来进行分析。</li>
+</ul>
+<h2 id="2-技术的可行性"><a href="#2-技术的可行性" class="headerlink" title="2. 技术的可行性"></a>2. 技术的可行性</h2><p>Databend 使用 Rust 语言开发，对主流数据库都有成熟的 driver 支持，以MySql和postgresql为例。 </p>
+<ul>
+<li><p>MySql的驱动</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[dependencies]</span><br><span class="line">mysql = <span class="string">&quot;*&quot;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> mysql::*;</span><br><span class="line"><span class="keyword">use</span> mysql::prelude::*;</span><br><span class="line"></span><br><span class="line"><span class="meta">#[derive(Debug, PartialEq, Eq)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Payment</span> &#123;</span><br><span class="line">    customer_id: <span class="type">i32</span>,</span><br><span class="line">    amount: <span class="type">i32</span>,</span><br><span class="line">    account_name: <span class="type">Option</span>&lt;<span class="type">String</span>&gt;,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() <span class="punctuation">-&gt;</span> std::result::<span class="type">Result</span>&lt;(), <span class="type">Box</span>&lt;<span class="keyword">dyn</span> std::error::Error&gt;&gt; &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">url</span> = <span class="string">&quot;mysql://root:password@localhost:3306/db_name&quot;</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">pool</span> = Pool::<span class="title function_ invoke__">new</span>(url)?;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">conn</span> = pool.<span class="title function_ invoke__">get_conn</span>()?;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 创建一个临时的 payments 表</span></span><br><span class="line">    conn.<span class="title function_ invoke__">query_drop</span>(</span><br><span class="line">        <span class="string">r&quot;CREATE TEMPORARY TABLE payment (</span></span><br><span class="line"><span class="string">            customer_id int not null,</span></span><br><span class="line"><span class="string">            amount int not null,</span></span><br><span class="line"><span class="string">            account_name text</span></span><br><span class="line"><span class="string">        )&quot;</span>)?;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">payments</span> = <span class="built_in">vec!</span>[</span><br><span class="line">        Payment &#123; customer_id: <span class="number">1</span>, amount: <span class="number">2</span>, account_name: <span class="literal">None</span> &#125;,</span><br><span class="line">        Payment &#123; customer_id: <span class="number">3</span>, amount: <span class="number">4</span>, account_name: <span class="title function_ invoke__">Some</span>(<span class="string">&quot;foo&quot;</span>.<span class="title function_ invoke__">into</span>()) &#125;,</span><br><span class="line">        Payment &#123; customer_id: <span class="number">5</span>, amount: <span class="number">6</span>, account_name: <span class="literal">None</span> &#125;,</span><br><span class="line">        Payment &#123; customer_id: <span class="number">7</span>, amount: <span class="number">8</span>, account_name: <span class="literal">None</span> &#125;,</span><br><span class="line">        Payment &#123; customer_id: <span class="number">9</span>, amount: <span class="number">10</span>, account_name: <span class="title function_ invoke__">Some</span>(<span class="string">&quot;bar&quot;</span>.<span class="title function_ invoke__">into</span>()) &#125;,</span><br><span class="line">    ];</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 插入 payments 数据</span></span><br><span class="line">    conn.<span class="title function_ invoke__">exec_batch</span>(</span><br><span class="line">        <span class="string">r&quot;INSERT INTO payment (customer_id, amount, account_name)</span></span><br><span class="line"><span class="string">          VALUES (:customer_id, :amount, :account_name)&quot;</span>,</span><br><span class="line">        payments.<span class="title function_ invoke__">iter</span>().<span class="title function_ invoke__">map</span>(|p| params! &#123;</span><br><span class="line">            <span class="string">&quot;customer_id&quot;</span> =&gt; p.customer_id,</span><br><span class="line">            <span class="string">&quot;amount&quot;</span> =&gt; p.amount,</span><br><span class="line">            <span class="string">&quot;account_name&quot;</span> =&gt; &amp;p.account_name,</span><br><span class="line">        &#125;)</span><br><span class="line">    )?;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 从数据库中选择 payments 数据</span></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">selected_payments</span> = conn</span><br><span class="line">        .<span class="title function_ invoke__">query_map</span>(</span><br><span class="line">            <span class="string">&quot;SELECT customer_id, amount, account_name from payment&quot;</span>,</span><br><span class="line">            |(customer_id, amount, account_name)| &#123;</span><br><span class="line">                Payment &#123; customer_id, amount, account_name &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">        )?;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 确保 `payments` 等于 `selected_payments`</span></span><br><span class="line">    <span class="built_in">assert_eq!</span>(payments, selected_payments);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;Yay!&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="title function_ invoke__">Ok</span>(())</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>postgresql的驱动</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[dependencies]</span><br><span class="line">postgres = <span class="string">&quot;0.19&quot;</span> </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> postgres::&#123;Client, NoTls&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">client</span> = Client::<span class="title function_ invoke__">connect</span>(<span class="string">&quot;host=localhost user=postgres&quot;</span>, NoTls)?;</span><br><span class="line"></span><br><span class="line">client.<span class="title function_ invoke__">batch_execute</span>(<span class="string">&quot;</span></span><br><span class="line"><span class="string">    CREATE TABLE person (</span></span><br><span class="line"><span class="string">        id      SERIAL PRIMARY KEY,</span></span><br><span class="line"><span class="string">        name    TEXT NOT NULL,</span></span><br><span class="line"><span class="string">        data    BYTEA</span></span><br><span class="line"><span class="string">    )</span></span><br><span class="line"><span class="string">&quot;</span>)?;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="variable">name</span> = <span class="string">&quot;Ferris&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> <span class="variable">data</span> = None::&lt;&amp;[<span class="type">u8</span>]&gt;;</span><br><span class="line">client.<span class="title function_ invoke__">execute</span>(</span><br><span class="line">    <span class="string">&quot;INSERT INTO person (name, data) VALUES ($1, $2)&quot;</span>,</span><br><span class="line">    &amp;[&amp;name, &amp;data],</span><br><span class="line">)?;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> <span class="variable">row</span> <span class="keyword">in</span> client.<span class="title function_ invoke__">query</span>(<span class="string">&quot;SELECT id, name, data FROM person&quot;</span>, &amp;[])? &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">id</span>: <span class="type">i32</span> = row.<span class="title function_ invoke__">get</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">name</span>: &amp;<span class="type">str</span> = row.<span class="title function_ invoke__">get</span>(<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">data</span>: <span class="type">Option</span>&lt;&amp;[<span class="type">u8</span>]&gt; = row.<span class="title function_ invoke__">get</span>(<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;found person: &#123;&#125; &#123;&#125; &#123;:?&#125;&quot;</span>, id, name, data);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="3-项目实现细节"><a href="#3-项目实现细节" class="headerlink" title="3. 项目实现细节"></a>3. 项目实现细节</h2><h3 id="3-1-SQL-语法支持"><a href="#3-1-SQL-语法支持" class="headerlink" title="3.1 SQL 语法支持"></a>3.1 SQL 语法支持</h3><p>DICTIONARY 通过如下的语法进行创建、删除、查询。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> DICTIONARY user_info(</span><br><span class="line">  user_id UInt86,</span><br><span class="line">  user_name String,</span><br><span class="line">  user_address String</span><br><span class="line">)</span><br><span class="line"><span class="keyword">primary</span> key(user_id)</span><br><span class="line">SOURCE(MYSQL(</span><br><span class="line">  host <span class="string">&#x27;[localhost](http://localhost/)&#x27;</span></span><br><span class="line">  <span class="keyword">user</span> <span class="string">&#x27;root&#x27;</span></span><br><span class="line">  password <span class="string">&#x27;root&#x27;</span></span><br><span class="line">  db <span class="string">&#x27;db_name&#x27;</span></span><br><span class="line">  <span class="keyword">table</span> <span class="string">&#x27;table_name&#x27;</span></span><br><span class="line">));</span><br><span class="line"></span><br><span class="line"><span class="keyword">SHOW</span> DICTIONARIES;</span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">CREATE</span> DICTIONARY user_info;</span><br><span class="line"><span class="keyword">DROP</span> DICTIONARY user_info;</span><br></pre></td></tr></table></figure>
+
+<p>databend 使用 nom <a target="_blank" rel="noopener" href="https://crates.io/crates/nom">https://crates.io/crates/nom</a> 的库实现语法的解析，将深入的 SQL 转成 AST。</p>
+<ul>
+<li><p><strong>SQL</strong>是一种用于管理关系型数据库系统的标准化查询语言。它允许用户从数据库中检索、操作和管理数据，以及定义数据库结构。SQL 由一系列的命令组成，用于执行各种数据库操作，如查询数据、插入数据、更新数据、删除数据以及管理数据库对象等。</p>
+</li>
+<li><p><strong>Parser</strong>负责将用户提交的SQL查询语句转换为数据库能够理解和执行的内部结构。解析器的主要功能包括词法分析、语法分析、语义分析和生成查询计划。这些步骤确保SQL语句正确并优化其执行。</p>
+<ul>
+<li><strong>词法分析器</strong>：将输入的SQL字符串拆分为一个个称为“词法单元”（tokens）的基本组成部分。每个词法单元代表SQL语句中的一个基本元素，如关键词（例如SELECT、FROM）、标识符（例如表名、列名）、运算符（例如&#x3D;、&gt;）、字面值（例如字符串、数字）等。</li>
+<li><strong>语法分析器</strong>：接收词法单元并将它们组合成一个树状结构，称为“语法树”或“解析树”。语法分析器根据SQL语法规则检查SQL语句的正确性，确保词法单元按正确的顺序和结构排列。</li>
+<li><strong>语义分析器</strong>：检查解析树的语义正确性，即检查表名和列名是否存在、数据类型是否匹配、权限是否足够等。此阶段确保查询不仅在语法上正确，而且在语义上也是合理的。</li>
+</ul>
+</li>
+</ul>
+<p>在 Databend 的 parser 中，有几个重要的组件被用到，其中包括 <code>map</code>、<code>alt</code>、<code>tuple</code> 以及自定义的 <code>rule!</code> 宏。</p>
+<ul>
+<li><p><strong>map</strong>:用于将解析器解析出的数据转换为其他类型或格式。它接受两个参数：一个解析器和一个函数，用于将解析器的结果转换为另一种格式。在 Databend 中，map 组件经常用于将解析后的结果转换成 AST 结构。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> nom::&#123;<span class="literal">Err</span>,error::ErrorKind, IResult,Parser&#125;;</span><br><span class="line"><span class="keyword">use</span> nom::character::complete::digit1;</span><br><span class="line"><span class="keyword">use</span> nom::combinator::map;</span><br><span class="line"><span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">parser</span> = <span class="title function_ invoke__">map</span>(digit1, |s: &amp;<span class="type">str</span>| s.<span class="title function_ invoke__">len</span>());</span><br><span class="line"></span><br><span class="line"><span class="built_in">assert_eq!</span>(parser.<span class="title function_ invoke__">parse</span>(<span class="string">&quot;123456&quot;</span>), <span class="title function_ invoke__">Ok</span>((<span class="string">&quot;&quot;</span>, <span class="number">6</span>)));</span><br><span class="line"></span><br><span class="line"><span class="built_in">assert_eq!</span>(parser.<span class="title function_ invoke__">parse</span>(<span class="string">&quot;abc&quot;</span>), <span class="title function_ invoke__">Err</span>(Err::<span class="title function_ invoke__">Error</span>((<span class="string">&quot;abc&quot;</span>, ErrorKind::Digit))));</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>alt</strong>:用于在多个解析器之间进行选择。它接受两个或多个解析器作为参数，并依次尝试将输入数据解析为这些解析器中的一个，返回第一个成功解析的结果。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> nom::character::complete::&#123;alpha1, digit1&#125;;</span><br><span class="line"><span class="keyword">use</span> nom::branch::alt;</span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">parser</span>(input: &amp;<span class="type">str</span>) <span class="punctuation">-&gt;</span> IResult&lt;&amp;<span class="type">str</span>, &amp;<span class="type">str</span>&gt; &#123;</span><br><span class="line">  <span class="title function_ invoke__">alt</span>((alpha1, digit1))(input)</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">assert_eq!</span>(<span class="title function_ invoke__">parser</span>(<span class="string">&quot;abc&quot;</span>), <span class="title function_ invoke__">Ok</span>((<span class="string">&quot;&quot;</span>, <span class="string">&quot;abc&quot;</span>)));</span><br><span class="line"></span><br><span class="line"><span class="built_in">assert_eq!</span>(<span class="title function_ invoke__">parser</span>(<span class="string">&quot;123456&quot;</span>), <span class="title function_ invoke__">Ok</span>((<span class="string">&quot;&quot;</span>, <span class="string">&quot;123456&quot;</span>)));</span><br><span class="line"></span><br><span class="line"><span class="built_in">assert_eq!</span>(<span class="title function_ invoke__">parser</span>(<span class="string">&quot; &quot;</span>), <span class="title function_ invoke__">Err</span>(Err::<span class="title function_ invoke__">Error</span>(error_position!(<span class="string">&quot; &quot;</span>, ErrorKind::Digit))));</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>tuple</strong> :用于将多个解析器按顺序组合起来，形成一个元组。除了可以嵌套多个解析器之外，tuple 还支持使用 map 函数对解析结果进行转换。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> nom::sequence::tuple;</span><br><span class="line"><span class="keyword">use</span> nom::character::complete::&#123;alpha1, digit1&#125;;</span><br><span class="line"><span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">parser</span> = <span class="title function_ invoke__">tuple</span>((alpha1, digit1, alpha1));</span><br><span class="line"></span><br><span class="line"><span class="built_in">assert_eq!</span>(<span class="title function_ invoke__">parser</span>(<span class="string">&quot;abc123def&quot;</span>), <span class="title function_ invoke__">Ok</span>((<span class="string">&quot;&quot;</span>, (<span class="string">&quot;abc&quot;</span>, <span class="string">&quot;123&quot;</span>, <span class="string">&quot;def&quot;</span>))));</span><br><span class="line"><span class="built_in">assert_eq!</span>(<span class="title function_ invoke__">parser</span>(<span class="string">&quot;123def&quot;</span>), <span class="title function_ invoke__">Err</span>(Err::<span class="title function_ invoke__">Error</span>((<span class="string">&quot;123def&quot;</span>, ErrorKind::Alpha))));</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>rule!</strong>:用于方便地定义复杂的解析规则。它通过组合各种解析器和操作符来构建复杂的语法规则。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#[macro_export]</span></span><br><span class="line"><span class="built_in">macro_rules!</span> rule &#123;</span><br><span class="line">    ($($tt:tt)*) =&gt; &#123; nom_rule::rule!(</span><br><span class="line">        $crate::match_text,</span><br><span class="line">        $crate::match_token,</span><br><span class="line">        $($tt)*)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="3-2-元数据的存储"><a href="#3-2-元数据的存储" class="headerlink" title="3.2 元数据的存储"></a>3.2 元数据的存储</h3><p>DICTIONARY 的相关元信息会存储在 databend 的 meta 模块中，用于执行 SQL 查询时获取相关信息。</p>
+<p>Protobuf 具有以二进制格式存储数据，序列化和反序列化的速度快，且支持多种编程语言，能够清晰地清晰地定义数据的结构等优势。因此databend 采用 protobuf 对数据进行编码，转为二进制结果存储到数据库中。</p>
+<ul>
+<li>protobuf结构体实例：</li>
+</ul>
+<figure class="highlight protobuf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">syntax = <span class="string">&quot;proto3&quot;</span>;</span><br><span class="line"><span class="keyword">package</span> databend.meta;</span><br><span class="line"><span class="keyword">message </span><span class="title class_">DictionaryMeta</span> &#123;</span><br><span class="line">  <span class="type">string</span> name = <span class="number">1</span>;</span><br><span class="line">  <span class="type">string</span> source = <span class="number">2</span>;</span><br><span class="line">  map&lt;<span class="type">string</span>, <span class="type">string</span>&gt; options = <span class="number">3</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在 Rust 中，我们可以使用 prost crate 将其编译为 Rust 代码。</p>
+<p>Prost 是 Rust 语言的一个 Protocol Buffers 实现，它可以从 proto2 和 proto3 文件生成简单、符合 Rust 习惯、易读的 Rust 代码。</p>
+<ul>
+<li><p>添加依赖：</p>
+<figure class="highlight toml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[dependencies]</span></span><br><span class="line"><span class="attr">prost</span> = <span class="string">&quot;0.9&quot;</span></span><br><span class="line"><span class="attr">prost-types</span> = <span class="string">&quot;0.9&quot;</span></span><br><span class="line"><span class="section">[build-dependencies]</span></span><br><span class="line"><span class="attr">prost-build</span> = <span class="string">&quot;0.9&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编译 protobuf 文件</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    prost_build::<span class="title function_ invoke__">compile_protos</span>(&amp;[<span class="string">&quot;src/dictionary.proto&quot;</span>], &amp;[<span class="string">&quot;src/&quot;</span>]).<span class="title function_ invoke__">unwrap</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>导入生成的代码</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">pub</span> <span class="keyword">mod</span> dictionary &#123;</span><br><span class="line">    include!(<span class="built_in">concat!</span>(<span class="built_in">env!</span>(<span class="string">&quot;OUT_DIR&quot;</span>), <span class="string">&quot;/databend.meta.rs&quot;</span>));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用生成的 Rust 结构体，并将其编码为 protobuf 格式的二进制数据</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> dictionary::DictionaryMeta;</span><br><span class="line"><span class="keyword">use</span> prost::Message;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() <span class="punctuation">-&gt;</span> <span class="type">Result</span>&lt;(), <span class="type">Box</span>&lt;<span class="keyword">dyn</span> std::error::Error&gt;&gt; &#123;</span><br><span class="line">    <span class="comment">// 创建一个 DictionaryMeta 实例</span></span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">options</span> = std::collections::HashMap::<span class="title function_ invoke__">new</span>();</span><br><span class="line">    options.<span class="title function_ invoke__">insert</span>(<span class="string">&quot;host&quot;</span>.<span class="title function_ invoke__">to_string</span>(), <span class="string">&quot;localhost&quot;</span>.<span class="title function_ invoke__">to_string</span>());</span><br><span class="line">    options.<span class="title function_ invoke__">insert</span>(<span class="string">&quot;port&quot;</span>.<span class="title function_ invoke__">to_string</span>(), <span class="string">&quot;3306&quot;</span>.<span class="title function_ invoke__">to_string</span>());</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">dictionary_meta</span> = DictionaryMeta &#123;</span><br><span class="line">        name: <span class="string">&quot;user_info&quot;</span>.<span class="title function_ invoke__">to_string</span>(),</span><br><span class="line">        source: <span class="string">&quot;mysql&quot;</span>.<span class="title function_ invoke__">to_string</span>(),</span><br><span class="line">        options,</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 将 DictionaryMeta 实例编码为 protobuf 格式的二进制数据</span></span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">buf</span> = <span class="type">Vec</span>::<span class="title function_ invoke__">new</span>();</span><br><span class="line">    dictionary_meta.<span class="title function_ invoke__">encode</span>(&amp;<span class="keyword">mut</span> buf)?;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// buf 现在包含了 protobuf 格式的二进制数据</span></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;Encoded protobuf data: &#123;:?&#125;&quot;</span>, buf);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 从二进制数据解码回 DictionaryMeta 实例</span></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">decoded</span> = DictionaryMeta::<span class="title function_ invoke__">decode</span>(&amp;*buf)?;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;Decoded DictionaryMeta: &#123;:?&#125;&quot;</span>, decoded);</span><br><span class="line"></span><br><span class="line">    <span class="title function_ invoke__">Ok</span>(())</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="3-3-DICTIONARY-数据的查询"><a href="#3-3-DICTIONARY-数据的查询" class="headerlink" title="3.3 DICTIONARY 数据的查询"></a>3.3 DICTIONARY 数据的查询</h3><p>对 DICTIONARY 数据的查询主要通过 dict_get(dict_name, dict_field, dict_id) 函数进行。</p>
+<p>dict_get 有三个参数，第一个是字典的名字，第二个是查询的字段，第三个是查询字典的 id。</p>
+<p>例如：<code>select dict_get(user_info, &#39;user_name&#39;, 1);</code> 返回 ‘tom’，如图所示为查询语句的执行流程。</p>
+<p><img src="C:\Users\86182\Desktop\洪文丽\SQLPlanner执行流程.png" alt="SqlPlanner执行流程"></p>
+<p>dict_get 函数的执行会经过如下几个阶段：</p>
+<ol>
+<li><p><strong>binder 阶段</strong>：主要负责绑定数据源，通过查询 meta 判断字典和查询的字段是否存在，如果参数都没有问题，会生成一个初始的Logical Plan。得到初始的 Logical Plan 后，优化器会对其进行改写和优化，最终生成一个可执行的 Physical Plan 。</p>
+<ul>
+<li><p><strong>逻辑计划</strong>是一种高层次的表示方式，它描述了查询操作的逻辑过程，但不涉及具体的执行细节。逻辑计划关注的是“做什么”，而不是“怎么做”。作为优化的基础，通过优化器将其转换为更高效的执行计划。下面使用Rust定义了一个逻辑计划结构体，该逻辑计划定义了查询的字段和返回值类型，源数据库的地址等信息，根据逻辑计划可以生成物理计划。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">pub</span> <span class="keyword">struct</span> <span class="title class_">Dictionary</span> &#123;</span><br><span class="line"> <span class="comment">// dictionary name in meta</span></span><br><span class="line"> <span class="keyword">pub</span> name: <span class="type">String</span>,</span><br><span class="line"> <span class="comment">// dictionary field name</span></span><br><span class="line"> <span class="keyword">pub</span> field_name: <span class="type">String</span>,</span><br><span class="line"> <span class="comment">// dictionary primary name</span></span><br><span class="line"> <span class="keyword">pub</span> primary_name: <span class="type">String</span>,</span><br><span class="line"> <span class="comment">// dictionary primary key</span></span><br><span class="line"> <span class="keyword">pub</span> argument: <span class="type">Box</span>&lt;ScalarExpr&gt;,</span><br><span class="line"> <span class="comment">// dictionary field data type</span></span><br><span class="line"> <span class="keyword">pub</span> return_type: <span class="type">Box</span>&lt;DataType&gt;,</span><br><span class="line"> <span class="comment">// dictionary source type, MySQL, PostgreSQL, ..</span></span><br><span class="line"> <span class="keyword">pub</span> source_type: DictionarySourceType,</span><br><span class="line"> <span class="keyword">pub</span> host: <span class="type">String</span>,</span><br><span class="line"> <span class="keyword">pub</span> user_name: <span class="type">String</span>,</span><br><span class="line"> <span class="keyword">pub</span> password: <span class="type">String</span>,</span><br><span class="line"> <span class="keyword">pub</span> db_name: <span class="type">String</span>,</span><br><span class="line"> <span class="keyword">pub</span> table_name: <span class="type">String</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>逻辑计划经过Optimizer进行树结构的优化，以获得更高的执行效率。Planner将优化后的逻辑计划转化成<strong>物理计划</strong>物理计划是对逻辑计划的具体实现描述，涉及查询执行的详细步骤和策略。物理计划关注的是“怎么做”。下面使用Rust定义了一个物理计划结构体，该物理计划定义了输入参数的 index 和输出 column 的 index，源数据库的地址等信息。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">pub</span> <span class="keyword">struct</span> <span class="title class_">Dictionary</span> &#123;</span><br><span class="line"> <span class="comment">// A unique id of operator in a `PhysicalPlan` tree, only used for display.</span></span><br><span class="line"> <span class="keyword">pub</span> plan_id: <span class="type">u32</span>,</span><br><span class="line"> <span class="keyword">pub</span> input: <span class="type">Box</span>&lt;PhysicalPlan&gt;,</span><br><span class="line"> <span class="keyword">pub</span> dcitionary_funcs: <span class="type">Vec</span>&lt;DictionaryFunctionDesc&gt;,</span><br><span class="line"> <span class="comment">// Only used for explain</span></span><br><span class="line"> <span class="keyword">pub</span> stat_info: <span class="type">Option</span>&lt;PlanStatsInfo&gt;,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">pub</span> <span class="keyword">struct</span> <span class="title class_">DictionaryFunctionDesc</span> &#123;</span><br><span class="line"> <span class="keyword">pub</span> name: <span class="type">String</span>,</span><br><span class="line"> <span class="keyword">pub</span> func_name: <span class="type">String</span>,</span><br><span class="line"> <span class="keyword">pub</span> output_column: IndexType,</span><br><span class="line"> <span class="keyword">pub</span> arg_index: IndexType,</span><br><span class="line"> <span class="keyword">pub</span> arg_expr: <span class="type">String</span>,</span><br><span class="line"> <span class="keyword">pub</span> data_type: <span class="type">Box</span>&lt;DataType&gt;,</span><br><span class="line"> <span class="keyword">pub</span> field_name: <span class="type">String</span>,</span><br><span class="line"> <span class="keyword">pub</span> primary_name: <span class="type">String</span>,</span><br><span class="line"> <span class="comment">// dictionary source type, MySQL, PostgreSQL, ..</span></span><br><span class="line"> <span class="keyword">pub</span> source_type: DictionarySourceType,</span><br><span class="line"> <span class="keyword">pub</span> host: <span class="type">String</span>,</span><br><span class="line"> <span class="keyword">pub</span> user_name: <span class="type">String</span>,</span><br><span class="line"> <span class="keyword">pub</span> password: <span class="type">String</span>,</span><br><span class="line"> <span class="keyword">pub</span> db_name: <span class="type">String</span>,</span><br><span class="line"> <span class="keyword">pub</span> table_name: <span class="type">String</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><strong>执行阶段</strong>，执行计划在执行的时候会生成一个 sql ，例如 <code>select user_name from user_info where user_id = 12; </code>再调用外部的 MySQL 数据库查询数据，然后封装成结果返回。以下是执行过程：</p>
+<ul>
+<li><p>使用 sourc_type ，host 等字段连接远端数据库。</p>
+</li>
+<li><p>使用 name、field_name, primary_name 等字段生成查询等 SQL。</p>
+</li>
+<li><p>调用源数据库用这个 SQL 进行查询，获取返回的结果。</p>
+</li>
+</ul>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> mysql::*;</span><br><span class="line"><span class="keyword">use</span> mysql::prelude::*;</span><br><span class="line"><span class="keyword">use</span> std::error::Error;</span><br><span class="line"></span><br><span class="line"><span class="keyword">pub</span> <span class="keyword">struct</span> <span class="title class_">DictionaryFunctionDesc</span> &#123;</span><br><span class="line">    <span class="keyword">pub</span> name: <span class="type">String</span>,</span><br><span class="line">    <span class="keyword">pub</span> func_name: <span class="type">String</span>,</span><br><span class="line">    <span class="keyword">pub</span> output_column: <span class="type">u32</span>,</span><br><span class="line">    <span class="keyword">pub</span> arg_index: <span class="type">u32</span>,</span><br><span class="line">    <span class="keyword">pub</span> arg_expr: <span class="type">String</span>,</span><br><span class="line">    <span class="keyword">pub</span> data_type: <span class="type">Box</span>&lt;DataType&gt;,</span><br><span class="line">    <span class="keyword">pub</span> field_name: <span class="type">String</span>,</span><br><span class="line">    <span class="keyword">pub</span> primary_name: <span class="type">String</span>,</span><br><span class="line">    <span class="keyword">pub</span> source_type: DictionarySourceType,</span><br><span class="line">    <span class="keyword">pub</span> host: <span class="type">String</span>,</span><br><span class="line">    <span class="keyword">pub</span> user_name: <span class="type">String</span>,</span><br><span class="line">    <span class="keyword">pub</span> password: <span class="type">String</span>,</span><br><span class="line">    <span class="keyword">pub</span> db_name: <span class="type">String</span>,</span><br><span class="line">    <span class="keyword">pub</span> table_name: <span class="type">String</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">dict_get</span>(func_desc: &amp;DictionaryFunctionDesc, id: <span class="type">u32</span>) <span class="punctuation">-&gt;</span> <span class="type">Result</span>&lt;<span class="type">String</span>, <span class="type">Box</span>&lt;<span class="keyword">dyn</span> Error&gt;&gt; &#123;</span><br><span class="line">    <span class="comment">// 1. 连接到 MySQL 数据库</span></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">connection_url</span> = <span class="built_in">format!</span>(</span><br><span class="line">        <span class="string">&quot;mysql://&#123;&#125;:&#123;&#125;@&#123;&#125;/&#123;&#125;&quot;</span>,</span><br><span class="line">        func_desc.user_name, func_desc.password, func_desc.host, func_desc.db_name</span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">pool</span> = mysql::Pool::<span class="title function_ invoke__">new</span>(connection_url)?;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">conn</span> = pool.<span class="title function_ invoke__">get_conn</span>()?;</span><br><span class="line">    <span class="comment">// 2. 生成查询 SQL</span></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">query</span> = <span class="built_in">format!</span>(</span><br><span class="line">        <span class="string">&quot;SELECT &#123;&#125; FROM &#123;&#125; WHERE &#123;&#125; = &#123;&#125;;&quot;</span>,</span><br><span class="line">        func_desc.field_name, func_desc.table_name, func_desc.primary_name, id</span><br><span class="line">    );</span><br><span class="line">    <span class="comment">// 3. 执行查询并获取结果</span></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">result</span>: <span class="type">Option</span>&lt;<span class="type">String</span>&gt; = conn.<span class="title function_ invoke__">query_first</span>(query)?;</span><br><span class="line">    <span class="keyword">match</span> result &#123;</span><br><span class="line">        <span class="title function_ invoke__">Some</span>(value) =&gt; <span class="title function_ invoke__">Ok</span>(value),</span><br><span class="line">        <span class="literal">None</span> =&gt; <span class="title function_ invoke__">Err</span>(<span class="string">&quot;No result found&quot;</span>.<span class="title function_ invoke__">into</span>()),</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">func_desc</span> = DictionaryFunctionDesc &#123;</span><br><span class="line">        name: <span class="type">String</span>::<span class="title function_ invoke__">from</span>(<span class="string">&quot;user_info&quot;</span>),</span><br><span class="line">        func_name: <span class="type">String</span>::<span class="title function_ invoke__">from</span>(<span class="string">&quot;get_user_name&quot;</span>),</span><br><span class="line">        output_column: <span class="number">0</span>,</span><br><span class="line">        arg_index: <span class="number">1</span>,</span><br><span class="line">        arg_expr: <span class="type">String</span>::<span class="title function_ invoke__">from</span>(<span class="string">&quot;&quot;</span>),</span><br><span class="line">        data_type: <span class="type">Box</span>::<span class="title function_ invoke__">new</span>(DataType &#123;</span><br><span class="line">            <span class="comment">// 初始化 DataType...</span></span><br><span class="line">        &#125;),</span><br><span class="line">        field_name: <span class="type">String</span>::<span class="title function_ invoke__">from</span>(<span class="string">&quot;user_name&quot;</span>),</span><br><span class="line">        primary_name: <span class="type">String</span>::<span class="title function_ invoke__">from</span>(<span class="string">&quot;user_id&quot;</span>),</span><br><span class="line">        source_type: DictionarySourceType::MySQL,</span><br><span class="line">        host: <span class="type">String</span>::<span class="title function_ invoke__">from</span>(<span class="string">&quot;localhost&quot;</span>),</span><br><span class="line">        user_name: <span class="type">String</span>::<span class="title function_ invoke__">from</span>(<span class="string">&quot;root&quot;</span>),</span><br><span class="line">        password: <span class="type">String</span>::<span class="title function_ invoke__">from</span>(<span class="string">&quot;password&quot;</span>),</span><br><span class="line">        db_name: <span class="type">String</span>::<span class="title function_ invoke__">from</span>(<span class="string">&quot;example_db&quot;</span>),</span><br><span class="line">        table_name: <span class="type">String</span>::<span class="title function_ invoke__">from</span>(<span class="string">&quot;user_info&quot;</span>),</span><br><span class="line">    &#125;;</span><br><span class="line"><span class="comment">//查询user_id为12的用户</span></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">user_id</span> = <span class="number">12</span>;</span><br><span class="line">    <span class="keyword">match</span> <span class="title function_ invoke__">dict_get</span>(&amp;func_desc, user_id) &#123;</span><br><span class="line">        <span class="title function_ invoke__">Ok</span>(user_name) =&gt; <span class="built_in">println!</span>(<span class="string">&quot;User name: &#123;&#125;&quot;</span>, user_name),</span><br><span class="line">        <span class="title function_ invoke__">Err</span>(e) =&gt; <span class="built_in">println!</span>(<span class="string">&quot;Error: &#123;&#125;&quot;</span>, e),</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="4-总结"><a href="#4-总结" class="headerlink" title="4.总结"></a>4.总结</h2><p>​	本项目申请书提出了在 Databend 数据库中支持 External Dictionaries 的计划。该功能将使 Databend 能够直接接入并访问外部数据源，例如 MySQL 和 PostgreSQL，从而丰富 Databend 的生态系统。</p>
+<p>​	通过引入 External Dictionaries 功能，Databend 将能够实时访问和处理外部数据库中的数据。这一特性将解决传统数据导入方法中存在的数据一致性和实时性问题，避免繁琐的手动导入操作，确保数据始终最新。此外，该功能还将简化数据管理流程，减少对复杂 ETL 流程的依赖，提高数据处理的灵活性。</p>
+<p>​	技术方面，Databend 使用 Rust 语言开发，对主流数据库驱动（如 MySQL 和 PostgreSQL）有成熟的支持。项目计划通过详细的技术实现方案，展示如何在 Databend 中集成这些外部数据库的访问功能。代码示例展示了使用 Rust 语言连接和操作 MySQL 数据库的具体步骤，证明了该项目的技术可行性。</p>
+<p>​	总体而言，该项目的实施将显著增强 Databend 的数据处理能力和灵活性，为企业提供更加高效和便捷的数据管理与分析工具。通过实现对外部数据源的无缝接入，Databend 将能够更好地满足企业多样化的数据需求，提升其在实际应用中的竞争力和价值。</p>
+<p>​	最后，非常感谢老师能够在百忙之中仔细查看我的项目申请书并给出修改意见，经过这段时间对Databend项目的深入了解，我越来越相信它能够在未来有更大的成就，成为主流数据库。同时也希望能够参与到Databend的建设中。</p>
+<h1 id="逻辑计划与物理计划"><a href="#逻辑计划与物理计划" class="headerlink" title="逻辑计划与物理计划"></a>逻辑计划与物理计划</h1><p>在数据库查询中，逻辑计划和物理计划是查询优化过程中的两个关键阶段：</p>
+<ol>
+<li><p><strong>逻辑计划（Logical Plan）</strong>：</p>
+<ul>
+<li>逻辑计划是查询优化的第一阶段，它描述了查询的逻辑结构和操作，但不考虑具体的执行细节。</li>
+<li>它是根据用户的 SQL 查询语句生成的，包含了查询的所有必要步骤，如选择（SELECT）、投影（PROJECT）、连接（JOIN）、聚合（AGGREGATE）等。</li>
+<li>逻辑计划的主要目的是提供一个高层次的查询表示，它与数据存储的物理结构和数据库的具体实现无关。</li>
+<li>逻辑计划可以被视为查询的“概念模型”，它需要进一步的转换才能成为可在数据库中实际执行的计划。</li>
+</ul>
+</li>
+<li><p><strong>物理计划（Physical Plan）</strong>：</p>
+<ul>
+<li>物理计划是查询优化的第二阶段，它基于逻辑计划生成，包含了执行查询所需的具体步骤和资源。</li>
+<li>物理计划考虑了数据库的存储结构、索引、统计信息和系统资源等，以确定最有效的执行策略。</li>
+<li>它定义了操作的实际执行顺序，数据的访问路径（如使用哪个索引），以及数据在各个操作之间的传输方式。</li>
+<li>物理计划的目标是将逻辑计划转换成一个高效的执行计划，以最小化查询的执行时间和资源消耗。</li>
+</ul>
+</li>
+</ol>
+<p>逻辑计划和物理计划之间的关系可以概括为：</p>
+<ul>
+<li>用户的 SQL 查询首先被解析和转换成逻辑计划。</li>
+<li>逻辑计划经过优化，考虑不同的执行策略和转换规则。</li>
+<li>根据优化结果，生成物理计划，这是实际执行查询的蓝图。</li>
+<li>数据库执行引擎根据物理计划执行查询，检索数据。</li>
+</ul>
+<p>在复杂的查询中，逻辑计划可能包含多个步骤和子计划，每个步骤都可以有多个可能的物理实现。数据库查询优化器（Query Optimizer）的任务就是选择最佳的物理计划，以确保查询高效执行。</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="lx-navigation">
+	<div class="lx-cover next lx-cover-sm" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/images/footer-l.min.jpeg)">
+		<div class="overlay"></div>
+		<a class="copy" href="../../../08/24/Docker/">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Next</span>
+						<h3>Docker</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+        <div class="lx-cover prev lx-cover-sm" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/images/footer-r.min.jpeg)">
+		<div class="overlay"></div>
+		<a class="copy" href="#">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Prev</span>
+						<h3>没有更早的文章</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
+
+</div>
+<div class="comment"><div id="comments"></div></div>
+<footer>
+  <div>
+  Copyright &copy; 2024.<a href="/">Winnie's sweet home</a><br>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme <a href="https://lx.js.org" target="_blank">Lx</a><br>
+  </div>
+</footer>
+
+</div>
+
+<button class="hamburger hamburger--arrow-r" type="button" title="menu">
+    <div class="hamburger-box">
+      <div class="hamburger-inner"></div>
+    </div>
+</button>
+<div class="menu visibility">
+  <div class="menu-head">
+    <span class="layer">
+      <div class="col">
+        <div class="row for-pic">
+          <div class="profile-pic">
+            <a href="/"><img src="https://winnie-blog.oss-cn-beijing.aliyuncs.com/avatar.jpeg" alt="Winnie"/></a>
+          </div>
+        </div>
+        <div class="row for-name">
+          <p>Winnie</p>
+          <span class="tagline">一个大好人</span>
+        </div>
+      </div>
+    </span>
+  </div>
+  <nav class="menu-container">
+  <ul class="menu-items">
+    <li><a href="/"><i class="fa fa-home fa-fw"></i>首页</a></li>
+    <li><a href="/archives/"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+    <li class="has-sub"><span class="dropdown-heading">
+      <i class="fa fa-th-list fa-fw"></i>分类</span>
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/Databend/">Databend</a></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/life/">life</a></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%8A%80%E6%9C%AF/">技术</a></li></ul>
+    </li>
+    <li class="has-sub"><span class="dropdown-heading">
+      <i class="fa fa-bookmark fa-fw"></i>页面</span>
+        <ul>
+          <li><a href="../../../../guestbook/">Guestbook</a></li>
+        <li><a href="../../../../about/">About</a></li>
+        </ul>
+    </li>
+    <li class="has-sub"><span class="dropdown-heading">
+      <i class="fa fa-link fa-fw"></i>友链</span>
+        <ul>
+          <li> <a href="https://lx.js.org" target="_blank">Theme-Lx</a></li>
+        <li> <a href="https://github.com/Winnie-Hong0927?tab=repositories" target="_blank">Winnie-GitHub</a></li>
+        </ul>
+    </li>
+  </ul>
+  </nav>
+</div>
+
+<div class="gototop js-top">
+  <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/js/jquery.easing.min.js"></script>
+<script>
+(function () {
+	"use strict";
+	var goToTop = function() {
+		$(".js-gotop").on("click", function(event){
+			event.preventDefault();
+			$("html, body").animate({
+				scrollTop: $("html").offset().top
+			}, 500, "easeInOutExpo");
+			return false;
+		});
+		$(window).scroll(function(){
+			var $win = $(window);
+			if ($win.scrollTop() > 200) {
+				$(".js-top").addClass("active");
+			} else {
+				$(".js-top").removeClass("active");
+			}
+		});
+	};
+	$(function(){
+		goToTop();
+	});
+}());
+</script>
+<script src="https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/js/local.search.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.18/dist/Valine.min.js"></script>
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'n6i5DD3DpsyQs8JTXzV19p4s-gzGzoHsz',
+    appKey: 'MEHnbuII5ExhrnZtAWRvDHV5',
+    placeholder: '歡迎給我留言~~~',
+    avatar: 'identicon',
+    meta: guest,
+    pageSize: '10' || 10,
+    lang: 'zh' || 'zh-cn'
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+  TeX: {
+          extensions: ["mhchem.js"]
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+</body>
+</html>
